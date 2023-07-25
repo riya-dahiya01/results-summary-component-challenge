@@ -18,7 +18,7 @@ Welcome to my solution for the Results Summary Component challenge by Frontend M
 
 ## Demo
 
-You can view the live demo of my solution 
+You can view the live demo of my solution at https://riya-dahiya01.github.io/results-summary-component-challenge/
 
 ## Features
 
