@@ -1,0 +1,164 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'myFirstFont';
+}
+
+body{
+    height: 150vh;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: 650px;
+    height: 450px;
+    display: flex;
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.left-side{
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(hsla(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: white;
+}
+.left-side p{
+    color: rgb(174, 190, 206);
+    text-align: center;
+}
+
+.total_marks{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.total_marks h1{
+    font-size: 50px;
+}
+
+.total_marks p{
+    color: rgb(193, 193, 193);
+}
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    padding:  50px;
+    box-shadow: rgb(149, 169, 230, 0.2) 1.95px 1.95px 10.6px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.right-side h3{
+    margin-bottom: 30px;
+}
+.marks{
+    display: flex;
+    margin-top: 20px;
+    height: 40px;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.marks p{
+    color: #828896;
+}
+.marks span{
+    color: black;
+}
+
+
+.left-side-marks{
+    display: flex;
+    align-items: center;
+}
+
+.left-side-marks h4{
+    margin-left: 10px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 30px;
+    background-color: #303B59;
+    color: white;
+}
+
+.color-reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    
+}
+
+.color-memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.color-verbal{
+    background-color: hsla(166, 100%, 37%,0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.color-visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+ 
+/* ADDING MEDIA QUERIES */
+
+@media screen and (max-width:500px) {
+    body{
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        top:-23%;
+    }
+
+    .left-side{
+        border-radius: 0px;
+        width: 100%;
+        min-width: 280px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        
+    }
+
+    .right-side{
+        width: 100%;
+        min-width: 280px;
+    }
+}
